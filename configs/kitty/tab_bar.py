@@ -23,7 +23,7 @@ date_color = as_rgb(color_as_int(opts.color8))
 SEPARATOR_SYMBOL, SOFT_SEPARATOR_SYMBOL = ('', '')
 RIGHT_MARGIN = 1
 REFRESH_TIME = 1
-ICON = '  '
+ICON = ' 󰌽 '
 UNPLUGGED_ICONS = {
     10: '󰁺',
     20: '󰁻',
@@ -129,69 +129,69 @@ def _redraw_tab_bar(_):
 
 
 # Linux
-# def get_battery_cells() -> list:
-#     try:
-#         with open("/sys/class/power_supply/BAT0/status", "r") as f:
-#             status = f.read()
-#         with open("/sys/class/power_supply/BAT0/capacity", "r") as f:
-#             percent = int(f.read())
-#         if status == "Discharging\n":
-#             icon_color = UNPLUGGED_COLORS[
-#                 min(UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#             icon = UNPLUGGED_ICONS[
-#                 min(UNPLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#         elif status == "Not charging\n":
-#             icon_color = UNPLUGGED_COLORS[
-#                 min(UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#             icon = PLUGGED_ICONS[
-#                 min(PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#         else:
-#             icon_color = PLUGGED_COLORS[
-#                 min(PLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#             icon = PLUGGED_ICONS[
-#                 min(PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
-#             ]
-#         percent_cell = (bat_text_color, str(percent) + "% ")
-#         icon_cell = (icon_color, icon)
-#         return [percent_cell, icon_cell]
-#     except FileNotFoundError:
-#         return []
-
-# Mac
 def get_battery_cells() -> list:
     try:
-        result = subprocess.run(['pmset', '-g', 'batt'],
-                                capture_output=True, text=True)
-        output = result.stdout
-        status_search = re.search(r'(\w+)\s*;', output)
-        percent_search = re.search(r'(\d+)%', output)
-
-        if status_search and percent_search:
-            status = status_search.group(1)
-            percent = int(percent_search.group(1))
-
-            if status == "discharging":
-                icon_color = UNPLUGGED_COLORS[min(
-                    UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))]
-                icon = UNPLUGGED_ICONS[min(
-                    UNPLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))]
-            else:
-                icon_color = PLUGGED_COLORS[min(
-                    PLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))]
-                icon = PLUGGED_ICONS[min(
-                    PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))]
-
-            percent_cell = (bat_text_color, str(percent) + "% ")
-            icon_cell = (icon_color, icon)
-            return [percent_cell, icon_cell]
-    except Exception as e:
-        print(f"Error: {e}")
+        with open("/sys/class/power_supply/BAT0/status", "r") as f:
+            status = f.read()
+        with open("/sys/class/power_supply/BAT0/capacity", "r") as f:
+            percent = int(f.read())
+        if status == "Discharging\n":
+            icon_color = UNPLUGGED_COLORS[
+                min(UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
+            ]
+            icon = UNPLUGGED_ICONS[
+                min(UNPLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
+            ]
+        elif status == "Not charging\n":
+            icon_color = UNPLUGGED_COLORS[
+                min(UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
+            ]
+            icon = PLUGGED_ICONS[
+                min(PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
+            ]
+        else:
+            icon_color = PLUGGED_COLORS[
+                min(PLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))
+            ]
+            icon = PLUGGED_ICONS[
+                min(PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))
+            ]
+        percent_cell = (bat_text_color, str(percent) + "% ")
+        icon_cell = (icon_color, icon)
+        return [percent_cell, icon_cell]
+    except FileNotFoundError:
         return []
+
+# Mac
+# def get_battery_cells() -> list:
+#     try:
+#         result = subprocess.run(['pmset', '-g', 'batt'],
+#                                 capture_output=True, text=True)
+#         output = result.stdout
+#         status_search = re.search(r'(\w+)\s*;', output)
+#         percent_search = re.search(r'(\d+)%', output)
+
+#         if status_search and percent_search:
+#             status = status_search.group(1)
+#             percent = int(percent_search.group(1))
+
+#             if status == "discharging":
+#                 icon_color = UNPLUGGED_COLORS[min(
+#                     UNPLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))]
+#                 icon = UNPLUGGED_ICONS[min(
+#                     UNPLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))]
+#             else:
+#                 icon_color = PLUGGED_COLORS[min(
+#                     PLUGGED_COLORS.keys(), key=lambda x: abs(x - percent))]
+#                 icon = PLUGGED_ICONS[min(
+#                     PLUGGED_ICONS.keys(), key=lambda x: abs(x - percent))]
+
+#             percent_cell = (bat_text_color, str(percent) + "% ")
+#             icon_cell = (icon_color, icon)
+#             return [percent_cell, icon_cell]
+#     except Exception as e:
+#         print(f"Error: {e}")
+#         return []
 
 
 timer_id = None
