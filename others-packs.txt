@@ -5,8 +5,8 @@ waybar
 kdeconnect
 blueman
 network-manager-applet
-ayugram-desktop-bin
-steam
+ayugram-desktop
+steam-native-runtime
 hypridle
 google-chrome
 code
@@ -27,3 +27,4 @@ ttf-maple
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-common
 mousepad
+tofi
