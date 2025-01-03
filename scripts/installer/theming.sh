@@ -21,6 +21,12 @@ run_command "yay -S --sudoloop --noconfirm kvantum-theme-catppuccin-git" "Instal
 
 run_command "cp -r /home/$SUDO_USER/dotfiles/configs/kitty /home/$SUDO_USER/.config/" "Copy Catppuccin theme configuration for Kitty terminal" "yes" "no"
 
+run_command "pacman -S --noconfirm neofetch" "Install Display System Info" "yes" "no"
+
+run_command "cp -r /home/$SUDO_USER/dotfiles/configs/neofetch /home/$SUDO_USER/.config/neofetch" "Install Neofetch theme" "yes" "no"
+
+run_command "echo neofetch >> /home/$SUDO_USER/.zshenv" "Enable AutoLoad Neofetch in zsh" "yes" "no"
+
 # Add instructions to configure theming
 print_info "\nPost-installation instructions:"
 print_bold_blue "Set themes and icons:"

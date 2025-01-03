@@ -1,0 +1,40 @@
+Ср 01 янв 2025 09:53:57 EET: Installation started for theming section
+Ср 01 янв 2025 09:53:57 EET: Attempting to run: Install nwg-look for GTK theme management
+Ср 01 янв 2025 09:53:58 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:53:58 EET: Install nwg-look for GTK theme management was skipped by user choice.
+Ср 01 янв 2025 09:53:58 EET: Attempting to run: Install Qt5, Qt6 Settings, and Kvantum theme engines
+Ср 01 янв 2025 09:53:59 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:53:59 EET: Install Qt5, Qt6 Settings, and Kvantum theme engines was skipped by user choice.
+Ср 01 янв 2025 09:53:59 EET: Attempting to run: Install Catppuccin Mocha GTK theme
+Ср 01 янв 2025 09:54:05 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:54:05 EET: Install Catppuccin Mocha GTK theme was skipped by user choice.
+Ср 01 янв 2025 09:54:05 EET: Attempting to run: Install Tela Circle Dracula icon theme
+Ср 01 янв 2025 09:54:05 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:54:05 EET: Install Tela Circle Dracula icon theme was skipped by user choice.
+Ср 01 янв 2025 09:54:05 EET: Attempting to run: Install Catppuccin theme for Kvantum
+Ср 01 янв 2025 09:54:07 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:54:07 EET: Install Catppuccin theme for Kvantum was skipped by user choice.
+Ср 01 янв 2025 09:54:07 EET: Attempting to run: Copy Catppuccin theme configuration for Kitty terminal
+Ср 01 янв 2025 09:54:09 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:54:09 EET: Copy Catppuccin theme configuration for Kitty terminal was skipped by user choice.
+Ср 01 янв 2025 09:54:09 EET: Attempting to run: Install Display System Info
+Ср 01 янв 2025 09:54:23 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:23 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:35 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:35 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:40 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:40 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:41 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:41 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:42 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:42 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:44 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:44 EET: Command failed: pacman -S --noconfirm neofetch
+Ср 01 янв 2025 09:54:47 EET: Operation cancelled by user.
+Ср 01 янв 2025 09:54:47 EET: Install Display System Info was not completed due to failure and user chose not to retry.
+Ср 01 янв 2025 09:54:47 EET: Attempting to run: Install Neofetch theme
+Ср 01 янв 2025 09:54:49 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:49 EET: Install Neofetch theme completed successfully.
+Ср 01 янв 2025 09:54:49 EET: Attempting to run: Enable AutoLoad Neofetch in zsh
+Ср 01 янв 2025 09:54:55 EET: Operation accepted by user.
+Ср 01 янв 2025 09:54:55 EET: Enable AutoLoad Neofetch in zsh completed successfully.
