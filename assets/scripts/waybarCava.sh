@@ -1,6 +1,5 @@
 #!/bin/bash
-
-#Taken from JaKoolit's dotfiles
+# Taken from JaKoolit's dotfiles
 
 bar="▁▂▃▄▅▆▇█"
 dict="s/;//g"

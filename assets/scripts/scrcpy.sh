@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-
-#Script to run SCRCPY
+# Script to run SCRCPY
 
 if pgrep -x "scrcpy" > /dev/null
 then

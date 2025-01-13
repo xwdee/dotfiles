@@ -1,6 +1,5 @@
 #!/usr/bin/bash
-
-#Restart Waybar and swaync
+# Restart Waybar and swaync
 
 killall waybar
 killall swaync

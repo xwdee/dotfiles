@@ -1,6 +1,5 @@
 #!/bin/bash
-
-#Script for lockscreen
+# Script for lockscreen
 
 sleep 2
 powerprofilesctl set power-saver
