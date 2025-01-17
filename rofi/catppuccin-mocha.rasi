@@ -66,16 +66,16 @@ listview {
 element {
 	padding: 5px;
 	background-color: @bg-col;
-	text-color: @fg-col  ;
+	text-color: @fg-col
 }
 
 element-icon {
-	size: 25px
+	size: 25px;
 }
 
 element selected {
-	background-color:  @selected-col ;
-	text-color: @fg-col2  ;
+	background-color:  @selected-col
+	text-color: @fg-col2
 }
 
 mode-switcher {
