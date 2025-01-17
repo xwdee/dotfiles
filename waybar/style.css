@@ -46,9 +46,9 @@ window#waybar {
 #pulseaudio,
 #network,
 #cpu,
-#cava,
 #memory,
 #workspaces,
+#custom-cava,
 #custom-swaync,
 #tray,
 #backlight,
@@ -74,7 +74,7 @@ window#waybar {
     border-radius: 10px 0px 0px 10px;
 }
 
-#cava {
+#custom-cava {
     background: #1e1e2e;
     border-radius: 10px;
     margin-left: 10px;
