@@ -8,6 +8,7 @@
 	"height": 0,
 	"modules-left": [
 		"clock",
+		"cava",
 		"hyprland/language",
 		"hyprland/workspaces"
 		],
@@ -18,6 +19,7 @@
 		"cpu",
 		"network",
 		"battery",
+		"custom/swaync",
 		"backlight",
 		"pulseaudio",
 		"pulseaudio#microphone"
@@ -25,6 +27,16 @@
 
 	"hyprland/window": {
 		"format": " {}"
+		},
+
+	"cava": {
+		"bars": 10,
+		"method": "pulse",
+		"source": "auto",
+		"bar_delimiter": 0,
+		"ascii_max_range": 7,
+		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+		"on-click": "playerctl play-pause"
 		},
 
 	"hyprland/language": {
@@ -36,9 +48,15 @@
     
 	"hyprland/workspaces": {
 		"disable-scroll": true,
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": []
+			},
 		"all-outputs": true,
-		on-click": "activate"
-		//"format": "{icon}",
+		"on-click": "activate",
+		"format": "{icon}"
 		},
 
 	"tray": {
@@ -87,6 +105,27 @@
 		"format-icons": ["󰂃", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
 	},
 
+	"custom/swaync": {
+		"tooltip":true,
+		"format": " {} {icon} ",
+		"format-icons": {
+			"notification": "<span foreground='red'><sup></sup></span>",
+			"none": "",
+			"dnd-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-none": "",
+			"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"inhibited-none": "",
+			"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+			"dnd-inhibited-none": ""
+			},
+		"return-type": "json",
+		"exec-if": "which swaync-client",
+		"exec": "swaync-client -swb",
+		"on-click": "swaync-client -t -sw",
+		"on-click-right": "swaync-client -d -sw",
+		"escape": true
+	},
+
 	"pulseaudio": {
 		"format": "{icon}  {volume}%",
 		"tooltip": false,
@@ -118,9 +157,9 @@
 
 	"memory": {
 		"states": {
-			"c": 90, // critical
-			"h": 60, // high
-			"m": 30 // medium
+			"c": 90,
+			"h": 60,
+			"m": 30
 		},
 		"interval": 10,
 		"format": "󰾆 {used}GB",

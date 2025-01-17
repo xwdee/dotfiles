@@ -1,19 +1,19 @@
 * {
-    font-family: JetBrains Mono, Symbols Nerd Font;
+    font-family: JetBrains Mono;
     font-size: 24px;
     transition-property: background-color;
     transition-duration: 0.7s;
 }
 
 window {
-    background-color: #11111b;
-    /* border-radius: 10px; */
+    background-color: rgba(40, 40, 40, 0.1); /*#11111b;*/
+    border-radius: 10px;
 }
 
 button {
-    background-color: #11111b;
+    background-color: #1e1e2e;
     border-style: solid;
-    /* border-width: 2px; */
+    border-width: 2px;
     border-radius: 50px;
     background-repeat: no-repeat;
     background-position: center;

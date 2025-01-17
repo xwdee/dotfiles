@@ -5,4 +5,4 @@ killall waybar
 killall swaync
 waybar &
 swaync &
-notify-send --app-name=HOME -i ~/Pictures/moon.png Hello
+notify-send --app-name=HOME -i ~/.config/assets/kitty.png Hello

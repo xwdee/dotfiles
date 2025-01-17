@@ -1,7 +1,7 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono Nerd Font, monospace;
+    font-family: JetBrainsMono Nerd Font;
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -46,8 +46,10 @@ window#waybar {
 #pulseaudio,
 #network,
 #cpu,
+#cava,
 #memory,
 #workspaces,
+#custom-swaync,
 #tray,
 #backlight,
 #language {
@@ -55,11 +57,27 @@ window#waybar {
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 5px;
-    /* border: 1px solid #181825; */
+    border: 1px solid #181825;
+}
+
+#custom-swaync {
+    color:#a6adc8;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
+#battery {
+    color:#a6adc8;
 }
 
 #backlight {
     border-radius: 10px 0px 0px 10px;
+}
+
+#cava {
+    background: #1e1e2e;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 #language {
@@ -122,10 +140,4 @@ window#waybar {
     border-left: 0px;
     border-right: 0px;
     margin-right: 5px;
-}
-
-#battery {
-    color:#a6adc8;
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
 }

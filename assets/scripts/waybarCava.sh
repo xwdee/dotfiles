@@ -13,17 +13,17 @@ done
 config_file="/tmp/bar_cava_config"
 cat >"$config_file" <<EOF
 [general]
-bars = 10
+bars	=	10
 
 [input]
-method = pulse
-source = auto
+method	=	pulse
+source	=	auto
 
 [output]
-method = raw
-raw_target = /dev/stdout
-data_format = ascii
-ascii_max_range = 7
+method		=	raw
+raw_target	=	/dev/stdout
+data_format	=	ascii
+ascii_max_range	=	7
 EOF
 
 pkill -f "cava -p $config_file"
