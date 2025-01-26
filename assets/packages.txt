@@ -23,3 +23,5 @@ discord
 google-chrome-stable
 thunar
 code-oss
+obs-studio
+catppuccin-obs-theme-git
