@@ -1,0 +1,25 @@
+## This is packages list for fully install theme
+### Remove commented lines for currectly installation
+### Install: yay -S --needed -< packages.txt
+
+## Main Packages
+hyprland hyprshot hyprpaper hyprpicker hyprlock hypridle
+kitty neofetch imagemagisk fish
+rofi-wayland
+swaync waybar wlogout
+scrcpy mpv cava polkit-gnome nano
+gtk3 qt5ct qt6ct kvantum kvantum-theme-catppuccin-git
+
+## Extra Packages
+network-manager-applet
+blueman
+kdeconnect
+gnome-keyring
+steam-native-runtime
+heroic
+spotify-launcher
+ayugram-desktop-bin
+discord
+google-chrome-stable
+thunar
+code-oss
