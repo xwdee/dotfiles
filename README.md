@@ -7,7 +7,7 @@ By the end of this guide, you'll have a clean and functional Hyprland setup like
 <img src="/assets/github_repo/images/final-setup-02.png" alt="final-setup-02">
 
 ##### Setup Walkthrough 👇 (Click to Play)
-[![Showcase Video](https://raw.githubusercontent.com/gaurav210233/simple-hyprland/main/assets/github_repo/images/Simple_hypr_thumbnail.png)](https://www.youtube.com/watch?v=eNJorbKz_-U)
+[![Showcase Video](https://raw.githubusercontent.com/gaurav23b/simple-hyprland/main/assets/github_repo/images/Simple_hypr_thumbnail.png)](https://www.youtube.com/watch?v=eNJorbKz_-U)
 
 ## Purpose ✨
 This guide is intended for:
@@ -36,7 +36,7 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/gaurav210233/simple-hyprland.git ~/simple-hyprland
+    git clone https://github.com/gaurav23b/simple-hyprland.git ~/simple-hyprland
     ```
 2. Navigate to the installer directory:
     ```
