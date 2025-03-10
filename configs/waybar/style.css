@@ -1,3 +1,4 @@
+@import "mocha.css";
 * {
     border: none;
     border-radius: 0;
@@ -8,35 +9,35 @@
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
+    background: @mantle;
+    color: @text;
 }
 
 #workspaces button {
     padding: 5px;
-    color: #555869;
+    color: @subface2;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: @subtext0;
 }
 
 #workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
+    color: @subtext0;
+    background: @maroon;
     border-radius: 10px;
 }
 
 #workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
+    color: @crust;
+    background: @green;
     border-radius: 10px;
 }
 
 #workspaces button:hover {
-    background: #cdd6f4;
-    color: #11111b; 
+    background: @text;
+    color: @crust; 
     border-radius: 10px;
 }
 
@@ -44,37 +45,33 @@ window#waybar {
 #clock,
 #battery,
 #pulseaudio,
+#custom-swaync,
 #network,
 #cpu,
 #memory,
+#language,
 #workspaces,
-#cava,
+#custom-cava,
 #tray,
-#backlight,
-#language {
-    background: #1e1e2e;
+#backlight {
+    background: @base;
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 5px;
-    border: 1px solid #181825;
 }
 
-#battery {
-    color:#a6adc8;
+#custom-cava {
+    background: @base;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 #backlight {
     border-radius: 10px 0px 0px 10px;
 }
 
-#cava {
-    background: #1e1e2e;
-    border-radius: 10px;
-    margin-left: 10px;
-}
-
 #language {
-    background: #1e1e2e;
+    background: @base;
     border-radius: 10px;
     padding: 6px 6px;
     margin-left: 10px;
@@ -85,8 +82,14 @@ window#waybar {
     margin-right: 10px;
 }
 
+#custom-swaync {
+    color: @subtext0;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
+}
+
 #workspaces {
-    background: #1e1e2e;
+    background: @base;
     border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
@@ -109,28 +112,32 @@ window#waybar {
 }
 
 #clock {
-    color: #a6adc8;
+    color: @subtext0;
     border-radius: 10px 10px 10px 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
 #network {
-    color:  #a6adc8;
+    color:  @subtext0;
     border-radius: 10px 0px 0px 10px;
 
 }
 
 #pulseaudio {
-    color: #a6adc8;
+    color: @subtext0;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #a6adc8;
+    color: @subtext0;
     border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
     margin-right: 5px;
+}
+
+#battery {
+    color: @subtext0;
 }
