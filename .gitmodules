@@ -1,0 +1,6 @@
+[submodule "assets/backgrounds"]
+	path = assets/backgrounds
+	url = https://github.com/orangci/walls-catppuccin-mocha.git
+[submodule "assets/fastfetch"]
+	path = assets/fastfetch
+	url = https://github.com/LierB/fastfetch.git
