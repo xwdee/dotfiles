@@ -1,3 +1,3 @@
 ## My Hyprland DotFiles
-### in Catppuccin theme
+### in 'More' Catppuccin theme
 ### that's all
