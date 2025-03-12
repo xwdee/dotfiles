@@ -1,0 +1,68 @@
+@import url("mocha.css");
+* {
+    font-family: JetBrains Mono, Symbols Nerd Font;
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+}
+
+window {
+    background-color: @crust;
+    border-radius: 10px;
+}
+
+button {
+    background-color: @crust;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+    margin: 15px;
+}
+
+button:active,
+button:hover {
+    background-color: @surface0;
+}
+
+button:focus {
+    background-color: @surface0;
+}
+
+#lock {
+    background-image: image(url("lock.png"));
+}
+
+#lock:hover {
+    background-image: image(url("lock.png"));
+    color: @crust;
+}
+
+#logout {
+    background-image: image(url("logout.png"));
+}
+
+#logout:hover {
+    background-image: image(url("logout.png"));
+    color: @crust;
+}
+
+#shutdown {
+    background-image: image(url("power.png"));
+}
+
+#shutdown:hover {
+    background-image: image(url("power.png")); 
+    color: @crust;
+}
+
+#reboot {
+    background-image: image(url("restart.png"));
+}
+
+#reboot:hover {
+    background-image: image(url("restart.png"));
+    color: @crust;
+}
