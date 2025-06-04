@@ -5,4 +5,7 @@ killall waybar
 killall swaync
 waybar &
 swaync &
-notify-send --app-name=HOME -i ~/.config/assets/kitty.png Hello
+notify-send \
+	--app-name=HOME \
+	--icon=$HOME/Pictures/roman.jpg \
+	Hello!

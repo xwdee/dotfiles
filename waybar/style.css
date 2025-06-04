@@ -1,6 +1,6 @@
 @import url("mocha.css");
 * {
-    font-size:15px;
+    font-size: 16px;
     font-family: "CodeNewRoman Nerd Font Propo";
 }
 window#waybar{
@@ -31,26 +31,52 @@ tooltip {
     background:@crust;
     color: @subtext0;
 }
-#clock:hover, #custom-cava:hover, #custom-notification:hover,#bluetooth:hover,#network:hover,#battery:hover, #cpu:hover,#memory:hover,#temperature:hover{
+#clock:hover,
+#custom-cava:hover,
+#language:hover,
+#custom-notify:hover,
+#custom-swaync:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover{
     transition: all .3s ease;
     color:@surface0;
 }
-#custom-notification {
+
+#custom-notify {
     padding: 0px 5px;
     transition: all .3s ease;
     color:@subtext0;
 }
+
+#custom-swaync {
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@subtext0;
+}
+
 #clock{
     padding: 0px 5px;
     color:@subtext0;
     transition: all .3s ease;
 }
+
 #custom-cava{
     padding: 0px 5px;
     transition: all .3s ease;
     color:@subtext0;
 
 }
+
+#language {
+    padding: 0px 5px;
+    transition: all .3s ease;
+    color:@subtext0;
+}
+
 #workspaces {
     padding: 0px 5px;
 }

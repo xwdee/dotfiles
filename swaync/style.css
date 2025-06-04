@@ -266,6 +266,44 @@
 .widget-mpris .widget-mpris-player > box > button:hover {
     background-color: @mpris-button-hover;
 }
+
+.widget-dnd {
+    padding:unset;
+    margin:unset;
+    color: @text;
+    padding-left:20px;
+    padding-top:20px;
+}
+
+.widget-dnd > switch {
+    font-size: initial;
+    text-shadow: none;
+    background: @mantle;
+    box-shadow: none;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-top: 3px;
+    transition: all .7s ease;
+    padding: 2px;
+}
+
+.widget-dnd > switch:hover {
+    background: @surface0;
+}
+
+.widget-dnd > switch:checked {
+    background: @surface0;
+}
+
+.widget-dnd > switch:checked:hover {
+    background: @surface0;
+}
+
+.widget-dnd > switch slider {
+    background: @text;
+    border-radius: 6px;
+}
+
 .widget-buttons-grid {
     font-family:"CodeNewRoman Nerd Font Propo";
     padding-left: 8px;

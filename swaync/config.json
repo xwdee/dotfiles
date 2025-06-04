@@ -28,8 +28,9 @@
 "hide-on-action": true,
 "script-fail-notify": true,
 "widgets": [
-	"mpris",
 	"title",
+	"dnd",
+	"mpris",
 	"notifications",
 	"volume",
 	"backlight",
@@ -42,7 +43,7 @@
 		"button-text": "󰆴"
 	},
 	"label": {
-		"max-lines":1,
+		"max-lines": 1,
 		"text": "Notification Center!"
 	},
 	"mpris": {
@@ -59,7 +60,7 @@
 		"actions": [
 				{
 					"label": "",
-					"command": "kitty nmtui"
+					"command": "nm-connection-editor"
 				},
 				{
 					"label": "",
@@ -70,16 +71,16 @@
 					"command": "gnome-network-displays"
 				},
 				{
-					"label": "",
-					"command": "hyprlock"
-				},
-				{
 					"label":"",
 					"command": "reboot"
 				},
 				{
 					"label":"",
 					"command": "shutdown now"
+				},
+				{
+					"label": "",
+					"command": "/home/xunta/.config/hypr/scripts/hyprlock"
 				}
 			]
 		}

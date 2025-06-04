@@ -2,9 +2,16 @@
 "layer": "top",
 "position": "top",
 "reload_style_on_change": true,
-"modules-left": ["custom/notify","clock","custom/cava","tray"],
+"modules-left": ["custom/notify","clock","custom/cava","hyprland/language","tray"],
 "modules-center": ["hyprland/workspaces"],
 "modules-right": ["cpu","memory","temperature","group/expand","bluetooth","network","battery"],
+
+"hyprland/language": {
+	"format-en": "US",
+	"format-uk": "UA",
+	"format-ru": "RU",
+	"format": "{}"
+},
 
 "hyprland/workspaces": {
 	"format": "{icon}",
@@ -29,6 +36,27 @@
 	"tooltip": false,
 	"format": "",
 	"on-click": "swaync-client -t -sw",
+	"escape": true
+},
+
+"custom/swaync": {
+	"tooltip": true,
+	"format": "{icon}",
+	"format-icons": {
+		"notification": "<span foreground='red'></span>",
+		"none": "",
+		"dnd-notification": "<span foreground='red'></span>",
+		"dnd-none": "",
+		"inhibited-notification": "<span foreground='red'></span>",
+		"inhibited-none": "",
+		"dnd-inhibited-notification": "<span foreground='red'></span>",
+		"dnd-inhibited-none": ""
+	},
+	"return-type": "json",
+	"exec-if": "which swaync-client",
+	"exec": "swaync-client -swb",
+	"on-click": "swaync-client -t -sw",
+	"on-click-right": "swaync-client -d -sw",
 	"escape": true
 },
 
