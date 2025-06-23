@@ -6,13 +6,13 @@
 }
 {
 	"label" : "lock",
-	"action" : "hyprlock",
+	"action" : "hyprblock",
 	"text" : "Lock",
 	"keybind" : "l"
 }
 {
 	"label" : "logout",
-	"action" : "hyprctl dispatch exit",
+	"action" : "~/.config/hypr/scripts/logout.sh",
 	"text" : "Logout",
 	"keybind" : "e"
 }

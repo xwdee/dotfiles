@@ -1,0 +1,1 @@
+../hypr/scripts/waybarCava.sh

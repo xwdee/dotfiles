@@ -3,5 +3,5 @@
 
 sleep 0
 powerprofilesctl set power-saver
-hyprlock
+uwsm app -- hyprlock
 powerprofilesctl set performance
