@@ -2,6 +2,7 @@
 * {
     font-size: 16px;
     font-family: "CodeNewRoman Nerd Font Propo";
+    font-weight: bold;
 }
 
 window#waybar {
@@ -55,7 +56,8 @@ tooltip {
 #custom-notify {
     padding: 0px 5px;
     transition: all .3s ease;
-    color:@subtext0;
+    font-size: 18px;
+    color:@blue;
 }
 
 #custom-swaync {
