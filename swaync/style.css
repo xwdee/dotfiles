@@ -1,10 +1,8 @@
-@import url("mocha.css");
+@import url('mocha.css');
 @define-color mpris-album-art-overlay alpha(@crust, 0.55);
 @define-color mpris-button-hover alpha(@crust, 0.50);
-@define-color text @subtext0;
 @define-color bg alpha(@crust,.5);
 @define-color bg-hover alpha(@crust,.8);
-@define-color mycolor @surface0;
 @define-color border-color alpha(@base, 0.15);
 
 @keyframes fadeIn{
@@ -88,14 +86,14 @@
 
 .control-center .notification-row .notification-background .notification.critical .notification-content,
 .floating-notifications.background .notification-background .notification.critical .notification-content {
-    background-color: @marron;
+    background-color: unset;
 
 }
 
 .control-center .notification-row .notification-background .notification.critical .notification-content image,
 .floating-notifications.background .notification-background .notification.critical .notification-content image{
     background-color: unset;
-    color: @marron;
+    color: @maroon;
 
 }
 
@@ -174,6 +172,42 @@
     border:none;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, .65);
 }
+.widget-dnd {
+    padding:unset;
+    margin:unset;
+    color: @text;
+    padding-left:20px;
+    padding-top:20px;
+}
+.widget-dnd > switch {
+    font-size: initial;
+    text-shadow: none;
+    background: @mantle;
+    box-shadow: none;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-top: 3px;
+    transition: all .7s ease;
+    padding: 2px;
+}
+
+.widget-dnd > switch:hover {
+    background: @surface0;
+}
+
+.widget-dnd > switch:checked {
+    background: @surface0;
+}
+
+.widget-dnd > switch:checked:hover {
+    background: @surface0;
+}
+
+.widget-dnd > switch slider {
+    background: @text;
+    border-radius: 6px;
+}
+
 .widget-title {
     padding:unset;
     margin:unset;
@@ -188,7 +222,7 @@
     font-size: initial;
     color: @text;
     text-shadow: none;
-    background: rgba(255,85,85,.3);
+    background: alpha(@red,.3);
     border: none;
     box-shadow: none;
     border-radius: 12px;
@@ -266,52 +300,14 @@
 .widget-mpris .widget-mpris-player > box > button:hover {
     background-color: @mpris-button-hover;
 }
-
-.widget-dnd {
-    padding:unset;
-    margin:unset;
-    color: @text;
-    padding-left:20px;
-    padding-top:20px;
-}
-
-.widget-dnd > switch {
-    font-size: initial;
-    text-shadow: none;
-    background: @mantle;
-    box-shadow: none;
-    border-radius: 12px;
-    margin-right: 20px;
-    margin-top: 3px;
-    transition: all .7s ease;
-    padding: 2px;
-}
-
-.widget-dnd > switch:hover {
-    background: @surface0;
-}
-
-.widget-dnd > switch:checked {
-    background: @surface0;
-}
-
-.widget-dnd > switch:checked:hover {
-    background: @surface0;
-}
-
-.widget-dnd > switch slider {
-    background: @text;
-    border-radius: 6px;
-}
-
 .widget-buttons-grid {
-    font-family:"CodeNewRoman Nerd Font Propo";
+    font-family: CodeNewRoman Nerd Font Propo;
     padding-left: 8px;
     padding-right: 8px;
     padding-bottom: 8px;
     margin: 10px;
     border-radius: 12px;
-    background:transparent;
+    background: transparent;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button label {
@@ -332,7 +328,7 @@
     transition: all .5s ease;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-    background: @surface0;
+    background: @base;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
     transition: all .5s ease;
 
@@ -342,7 +338,7 @@
     background: @base;
 }
 .widget-buttons-grid > flowbox > flowboxchild > button.toggle:checked label {
-    color: @crust;
+    color: @background;
 }
 
 .widget-menubar > box > .menu-button-bar > button {

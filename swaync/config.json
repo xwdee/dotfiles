@@ -6,7 +6,7 @@
 "control-center-layer": "top",
 "layer-shell": true,
 "cssPriority": "application",
-"control-center-width": 480,
+"control-center-width": 460,
 "control-center-margin-top": 8,
 "control-center-margin-bottom": 8,
 "control-center-margin-right": 0,
@@ -27,15 +27,7 @@
 "hide-on-clear": false,
 "hide-on-action": true,
 "script-fail-notify": true,
-"widgets": [
-	"title",
-	"dnd",
-	"mpris",
-	"notifications",
-	"volume",
-	"backlight",
-	"buttons-grid"
-],
+"widgets": ["title","dnd","mpris","notifications","volume","backlight","buttons-grid"],
 "widget-config": {
 	"title": {
 		"text": "Notification Center",
@@ -69,14 +61,6 @@
 				{
 					"label": "󰀟",
 					"command": "gnome-network-displays"
-				},
-				{
-					"label":"",
-					"command": "systemctl reboot"
-				},
-				{
-					"label":"",
-					"command": "systemctl poweroff"
 				},
 				{
 					"label": "",
